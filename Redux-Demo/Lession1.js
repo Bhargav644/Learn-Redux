@@ -1,5 +1,5 @@
 
-/**  Basic of Redux that how to create store ,action and how to dispatch certain action with subscribe and unsubdcibe featuree  */
+/**  Basic of Redux that how to create store ,action and how to dispatch certain action with subscribe and unsubscribe feature  */
 
 const redux=require("redux");
 const createStore=redux.createStore;
