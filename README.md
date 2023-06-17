@@ -31,4 +31,23 @@
 
     - `STEP2`: These folders such as app,features and files such as cakeSlice,canSlice  are copied from above folder `Redux-TK-Demo` except the import and exports are changed into `ES6 Module` Syntax.
 
+    - `STEP3` : Installing `react-redux` library which has some inbuilt hooks which gives us the direct access to the `redux-store`
+
+    - `STEP4` : As mentioned above regarding `react-redux` it has a hool called `useSelector` which allows to get current state of store using a small function snippet.
+
+```
+import {useSelector} from 'react-redux';
+
+funtion X(){
+    const numOfCakes=useSelector((state)=> state.cake.numOfCakes);
+
+    return (
+        <div>
+            <h2>Num Of Cakes : {numOfCakes}</h2>
+        </div>
+    )
+}
+
+```
+
 
