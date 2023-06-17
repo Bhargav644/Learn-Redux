@@ -50,4 +50,23 @@ funtion X(){
 
 ```
 
+    - `STEP5`: For dispatching a particular action we have useDispatch hook instroduced by `react-redux` whihc allows us to dispatch anyparticular function.
+
+```
+import {useDispatch} from 'react-redux';
+import {ordered} from './cakeSlice.js';
+
+funtion X(){
+    const dispatch =useDispatch();
+    return (
+        <div>
+            <button onClick={()=>dispatch(ordered())}> Order </button>
+
+        </div>
+    )
+}
+
+```
+
+
 
