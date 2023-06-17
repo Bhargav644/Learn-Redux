@@ -36,38 +36,38 @@
     - `STEP4` : As mentioned above regarding `react-redux` it has a hool called `useSelector` which allows to get current state of store using a small function snippet.
 
 ```
-import {useSelector} from 'react-redux';
+    import {useSelector} from 'react-redux';
 
-funtion X(){
-    const numOfCakes=useSelector((state)=> state.cake.numOfCakes);
+    funtion X(){
+        const numOfCakes=useSelector((state)=> state.cake.numOfCakes);
 
-    return (
-        <div>
-            <h2>Num Of Cakes : {numOfCakes}</h2>
-        </div>
-    )
-}
-
-```
-<>
-
-    - `STEP5`: For dispatching a particular action we have useDispatch hook instroduced by `react-redux` whihc allows us to dispatch anyparticular function.
-
-<>
+        return (
+            <div>
+                <h2>Num Of Cakes : {numOfCakes}</h2>
+            </div>
+        )
+    }
 
 ```
-import {useDispatch} from 'react-redux';
-import {ordered} from './cakeSlice.js';
+<div>
+- `STEP5`: For dispatching a particular action we have useDispatch hook instroduced by `react-redux` whihc allows us to dispatch anyparticular function.
+</div>
 
-funtion X(){
-    const dispatch =useDispatch();
-    return (
-        <div>
-            <button onClick={()=>dispatch(ordered())}> Order </button>
 
-        </div>
-    )
-}
+
+```
+    import {useDispatch} from 'react-redux';
+    import {ordered} from './cakeSlice.js';
+
+    funtion X(){
+        const dispatch =useDispatch();
+        return (
+            <div>
+                <button onClick={()=>dispatch(ordered())}> Order </button>
+
+            </div>
+        )
+    }
 
 ```
 
