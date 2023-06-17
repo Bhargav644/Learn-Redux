@@ -18,5 +18,5 @@
 
     - `Lession1.js` : Basics reagarding the `@reduxjs/toolkit` library that how make store , reducers and all which furthur is in `features`,`app` folders.
     
-    - `Lession2.js` : Consists of integrating middlewares such as logger inside `@reduxjs/toolkit`.
+    - `Lession2.js` : Consists integration of  middlewares such as logger inside `@reduxjs/toolkit`.
 
