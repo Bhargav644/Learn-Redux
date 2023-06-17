@@ -49,9 +49,8 @@
     }
 
 ```
-<div>
+
 - `STEP5`: For dispatching a particular action we have useDispatch hook instroduced by `react-redux` whihc allows us to dispatch anyparticular function.
-</div>
 
 
 
