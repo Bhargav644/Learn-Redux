@@ -70,5 +70,26 @@
 
 ```
 
+- `STEP6` : Fetching data using `useDispatch`
 
+
+```
+    import React,{useEffect} from 'react'
+    import {useDispatch,useSelector} from "react-redux";
+    import  {fetchUsers} from "./userSlice";
+
+    function UserView() {
+
+    const user=useSelector((state) => state.user);
+    const dispatch=useDispatch();
+    useEffect(() => {
+        dispatch(fetchUsers());
+    },[]);
+    return (
+    <>...</>
+    )
+    }
+
+```
+ 
 
