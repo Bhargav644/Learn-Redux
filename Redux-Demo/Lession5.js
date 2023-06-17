@@ -68,7 +68,7 @@ const reducer=(state=initialState,action)=>{
 const fetchUsers=()=>{
     return function(dispatch){
         dispatch(fetchUserRequest());
-        axios.get("https://jsonplaceholder.typicode.com/user").then((res)=>{
+        axios.get("https://jsonplaceholder.typicode.com/users").then((res)=>{
             const users=res.data.map((user)=>user.id);
             dispatch(fetchUserSuccess(users));
         }).catch(err=>{

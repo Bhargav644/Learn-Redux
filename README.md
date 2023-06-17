@@ -20,3 +20,15 @@
     
     - `Lession2.js` : Consists integration of  middlewares such as logger inside `@reduxjs/toolkit`.
 
+    - `Lession3.js` : Dealing with extra reducers using `extraReducers` property of createSlice funtion.
+
+    - `Lession4.js` : Regarding `createAsyncThunk` functionality in `@reduxjs/toolkit`.
+
+
+* [3]Folder : *redux-rtk-demo*  : Demonstration of toolkit using react.
+    
+    - `STEP1:` This react repo is created using `vite` used `npm create vite@latest react-rtk-demo`
+
+    - `STEP2`: These folders such as app,features and files such as cakeSlice,canSlice  are copied from above folder `Redux-TK-Demo` except the import and exports are changed into `ES6 Module` Syntax.
+
+
